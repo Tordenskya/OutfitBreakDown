@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title></title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/pieces.css"
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <p class="pageName">Outfit Break Down</p>
+    </header>
+
+    <main class="main">
+      <div class="whole">
+        <div class="input-div js-input-div-whole">
+          <p>Drag and drop whole outfit or <span class="browse">Browse</span></p>
+          <input type="file" class="file" accept="images/jpeg, images/jpg, images/png">
+        </div>
+
+        <form id="queued-form-whole">
+          <div class="queued-div-whole js-queued-div-whole"></div>
+        </form>
+      </div>
+
+      <button class="extend_to_pieces" onclick="renderPieces()">
+        >
+      </button>
+
+      <div class="pieces js-piecesContainer">
+      </div>
+    </main>
+    
+    <script src="script/Lists/Lists.js"></script>
+    <script src="script/jsPiecesList.js"></script>
+    <script src="script/listAndDisplay.js"></script>
+
+  </body>
+
+</html>
