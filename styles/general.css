@@ -1,0 +1,54 @@
+body {
+  background-color: white;
+  font-family: 'Courier New';
+  font-weight: bold;
+}
+
+.header {
+  max-width: 1224px;
+  width: 92%;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-style: dashed;
+}
+
+.pageName {
+  font-family: Impact;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 1224px;
+  width: 92%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.whole {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 450px;
+  border-style: dashed;
+}
+
+.pieces {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 450px;
+  border-style: dashed;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.extend_to_pieces {
+  width: 50px;
+}

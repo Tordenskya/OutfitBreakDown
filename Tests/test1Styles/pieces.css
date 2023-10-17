@@ -1,0 +1,100 @@
+.pieces {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBox {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  height: 140px;
+  width: 500px;
+}
+
+.pictureContainer {
+  display: flex;
+  height: 190px;
+  width: 75px;
+  align-items: center;
+  justify-content: top;
+  margin-top: 60px;
+  border: none;
+}
+
+.basicImg {
+  height: 120px;
+  width: 75px;
+  object-fit: cover;
+  border: none;
+  margin-bottom: 70px;
+}
+
+.text-additionalPiece-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  margin-top: 0px;
+}
+
+.pieceHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between, center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+
+
+.title {
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.frameAndDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top, left;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.input-text {
+  margin-top: 20px;
+  width: 200px;
+  flex: 1;
+  border: none;
+}
+
+.accessorie-piece-container {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+
+.accessorie-pieces {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+@media (min-height: 1250px) {
+  .titleBox {
+    height: 200px;
+  }
+}

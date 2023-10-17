@@ -1,0 +1,20 @@
+
+::-webkit-file-upload-button {
+  background-color: lightblue;
+  color: rgb(85, 85, 85);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: smaller;
+  
+}
+
+.middleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 20px;
+  flex-grow: 5;
+}
+

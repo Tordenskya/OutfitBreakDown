@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title></title>
+
+    <style>
+
+      #result {
+        display: flex;
+        gap: 10px;
+        padding: 10px 0;
+      }
+
+      .thumbnail {
+        height: 200px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <label>Select multiple images</label>
+    <input id="files" type="file" multiple accept="image/jpeg, image/jpg, image/png">
+
+    <output id="result"></output>
+    
+    <script>
+
+      document.querySelector("#files").addEventListener("change", (e) => {
+        if(window.file && window.FileReader && window.FileList && window.blob) {
+          const files= e.target.files;
+          const output = document.querySelector("#reuslt");
+
+          for(let i = 0; i < files.lenght; i++) {
+            if(!files[i].type.match("image")) continue;
+            const picReader = new FileReader();
+            picReader.addEventListener("load", function(event) {
+              const picFile = event.target;
+              const div = document.createElement("div");
+              div.innerHTML = `<img class="thumbnail" src="${picFile.result}" title="${picFile.name}"/>`;
+              output.appendChild(div);
+            }) 
+            picReader.readAsDataURL(files[i])
+          }
+        } else {
+           alert('Your browser does not support the file API')
+        }
+      })
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,32 @@
+.whole-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.wholeInputTitle {
+  margin-bottom: 10px;
+}
+
+.whole-pic {
+  border: 2px solid black;
+  height: 512px;
+  width: 288px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.wholeImg {
+  height: 512px;
+  width: 288px;
+  object-fit:cover;
+}
+
+@media (min-height: 1250px) {
+  .whole-pic,
+  .wholeImg {
+    height: 800px;
+    width: 480px;
+  }
+  
+}
